@@ -973,6 +973,7 @@ body {
   }
   .subscribe-form {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 /* #endregion */
