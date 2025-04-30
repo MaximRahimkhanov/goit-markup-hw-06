@@ -1016,3 +1016,33 @@ button {
   }
 }
 /* #endregion */
+
+/* burger */
+@media (max-width: 768px) {
+  .navi-list,
+  .address {
+    display: none;
+  }
+  .header-container {
+    max-width: 320px;
+    padding: 0 16px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .logo {
+    margin: 0;
+  }
+  .burger-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .burger-icon {
+    fill: #2f2f37;
+  }
+}
+@media (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
