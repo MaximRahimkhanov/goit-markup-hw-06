@@ -35,7 +35,7 @@
 
   <header class="page-header">
 
-    <div class="container header-container">
+    <div class="container header-cont header-con">
       <nav class="navi">
         <a class="logo-text logo" href="./index.html">Web<span class="span-logo-nav">Studio</span></a>
         <ul class="navi-list">
@@ -49,22 +49,79 @@
       <address style="font-style: normal; color: #434455" class="address">
         <ul class="adress-ul">
           <li class="mail">
-            <a class="link-address" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="link-address mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li class="tel">
             <a class="link-address" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
       </address>
-      <button class="burger-btn" type="button"><svg class="burger-icon" width="24" height="24">
+      <button class="burger-btn" type="button" data-menu-open><svg class="burger-icon" width="24" height="24">
           <use href="./images/icons.svg#icon-burger-icon"></use>
         </svg></button>
     </div>
-    <div class="mobile-menu is-open">
-      <div class="mobile-menu-container">
-        <button type="button" class="mobile-menu-close">close</button>
-        <nav>nav</nav>
-        <address>address</address>
+    <div class="mobile-menu is-ope" data-menu>
+      <div class="header-cont mobile-menu-container">
+
+        <button type="button" class="mobile-menu-close" data-menu-close>
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/iconsform.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul class="navi-list-menu">
+            <li class="li-mobile-menu"><a class="links-menu link-menu-studio" href="./index.html">Studio</a></li>
+            <li class="li-mobile-menu"><a class="links-menu" href="">Portfolio</a></li>
+            <li><a class="links-menu" href="">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address>
+          <ul class="ul-adress">
+            <li class="tel">
+              <a class="link-tel-menu" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mail">
+              <a class="link-mail-menu" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+
+        </address>
+        <div>
+          <ul class="icons">
+            <li class="icon-class">
+              <a class="a-class" href="">
+                <svg class="icons-box" width="16" height="16">
+                  <use class="icons-logo" href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="icon-class">
+              <a class="a-class" href="">
+                <svg class="icons-box" width="16" height="16">
+                  <use class="icons-logo" href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="icon-class">
+              <a class="a-class" href="">
+                <svg class="icons-box" width="16" height="16">
+                  <use class="icons-logo" href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-class">
+              <a class="a-class" href="">
+                <svg class="icons-box" width="16" height="16">
+                  <use class="icons-logo" href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
     </div>
@@ -543,6 +600,7 @@
   <!-- #endregion FORM-->
 
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
