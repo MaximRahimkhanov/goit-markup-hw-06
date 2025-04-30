@@ -983,7 +983,8 @@ button {
 /* #region laptop adaptation */
 /* 768+*/
 @media (min-width: 768px) and (max-width: 1158px) {
-  .container {
+  .head-c {
+    display: flex;
     padding: 0 16px;
   }
   .adress-ul {
@@ -1004,6 +1005,9 @@ button {
   }
   .mail-link {
     padding-bottom: 12px;
+  }
+  .ul-adres {
+    display: flex;
   }
 
   .list-gap {
@@ -1045,8 +1049,6 @@ button {
 }
 
 /* burger */
-@media (max-width: 768px) {
-}
 
 @media (max-width: 768px) {
   .navi-list,
