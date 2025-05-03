@@ -913,6 +913,11 @@ button {
     align-items: center;
     max-width: 356px;
   }
+  .div-portfol {
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+  }
   .li-four {
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
