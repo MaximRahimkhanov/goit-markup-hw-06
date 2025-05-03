@@ -260,7 +260,6 @@ button {
 /* #region SECTION2 */
 .section-two {
   padding: 120px 0;
-  padding-bottom: 120px;
 }
 .cont-section-two {
   display: flex;
@@ -1240,6 +1239,7 @@ button {
     padding: 0;
   }
   .cont-section-two {
+    margin: 0 auto;
     gap: 0;
     column-gap: 24px;
   }
@@ -1420,19 +1420,19 @@ button {
     max-width: 1158px;
     padding: 0;
     margin: 0 auto;
-    display: flex;
   }
   .content-section-one {
     flex-direction: column;
   }
+
   .sect-pading {
     max-width: 1440px;
     margin: 0 auto;
   }
-
+  .cont-section-two {
+    gap: 24px;
+  }
   .section-two {
-    padding-left: 156px;
-    padding-right: 156px;
     padding-top: 120px;
     padding-bottom: 120px;
   }
