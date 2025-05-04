@@ -218,6 +218,64 @@ button {
 
   margin: 0 auto;
 }
+
+@media (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-2x.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .section-one {
+    width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .section-one {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
+  }
+}
+
+@media (min-width: 1158px) {
+  .section-one {
+    width: 1440px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .section-one {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
+  }
+}
+
 .section-h-one {
   max-width: 496px;
   margin-left: auto;
@@ -816,12 +874,17 @@ button {
 }
 
 .label-checkbox {
+  display: flex;
+  align-items: center;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 .span-checkbox {
+  flex-shrink: 0;
+
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1072,8 +1135,8 @@ button {
     visibility: hidden;
     pointer-events: none;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .mobile-menu.is-open {
@@ -1467,3 +1530,12 @@ button {
 }
 
 /* #region burger-menu*/
+.button-footer:hover .svg-subscribe {
+  animation-name: heartBeat;
+  animation-duration: 3s;
+
+  fill: #31d0aa;
+}
+.input-footer:hover::placeholder {
+  color: #31d0aa;
+}
