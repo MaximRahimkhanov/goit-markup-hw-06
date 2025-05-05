@@ -212,7 +212,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/dark-bg-mob.jpg);
   background-size: cover;
   background-position: center;
 
@@ -226,19 +226,19 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office-2x.jpg);
+      url(../images/dark-bg-mob-@2x\ .jpg);
   }
 }
 
 @media (min-width: 768px) {
   .section-one {
-    width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/dark-bg-tab.jpg);
   }
 
   @media (min-resolution: 192dpi) {
@@ -248,20 +248,20 @@ button {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/people-office-2x.jpg);
+        url(../images/dark-bg-tab-@2x.jpg);
     }
   }
 }
 
 @media (min-width: 1158px) {
   .section-one {
-    width: 1440px;
+    max-width: 1440px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/people-office-desk.jpg);
   }
 
   @media (min-resolution: 192dpi) {
@@ -271,7 +271,7 @@ button {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/people-office-2x.jpg);
+        url(../images/people-office-desk-@2x.jpg);
     }
   }
 }
@@ -319,6 +319,7 @@ button {
 .section-two {
   padding: 120px 0;
 }
+
 .cont-section-two {
   display: flex;
   gap: 72px;
@@ -341,6 +342,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+
+  margin-bottom: 8px;
 }
 .icon-wrapper {
   border: 1px solid #8e8f99;
@@ -456,7 +459,7 @@ button {
 .li-four {
   width: calc((100% - 48px) / 3);
   width: 360px;
-  height: 420px;
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -564,7 +567,7 @@ button {
 .div-links-footer {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+
   margin-right: 80px;
 }
 .footer-social-media {
@@ -916,6 +919,9 @@ button {
 /* #region MOB max-width 767 adaptation */
 
 /*  */
+.h-two {
+  margin-bottom: 8px;
+}
 
 @media (max-width: 767px) {
   .section-one {
@@ -942,7 +948,7 @@ button {
   .section-two {
     max-width: 320px;
     margin: 0 auto;
-    padding: 0;
+    padding: 96px 0;
   }
   .cont-section-two {
     gap: 72px;
@@ -954,9 +960,8 @@ button {
   .section-three {
     max-width: 320px;
     margin: 0 auto;
-    padding: 0;
 
-    padding: 96px 28px;
+    padding: 96px 0;
   }
   .ul-ourteam {
     gap: 72px;
@@ -990,12 +995,9 @@ button {
   .section-four {
     max-width: 320px;
     margin: 0 auto;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .section-four-co {
     padding: 96px 15px;
   }
+
   .section-four-title {
     font-weight: 700;
     font-size: 36px;
@@ -1064,7 +1066,11 @@ button {
     width: 288px;
   }
 }
-
+@media (max-width: 1157px) and (min-width: 1158px) {
+  .p-portfol {
+    margin-bottom: 0;
+  }
+}
 /* modal */
 @media (max-width: 767px) {
   .modal {
@@ -1299,7 +1305,7 @@ button {
   .section-two {
     max-width: 768px;
     margin: 0 auto;
-    padding: 0;
+    padding: 96px 0;
   }
   .cont-section-two {
     margin: 0 auto;
@@ -1323,13 +1329,11 @@ button {
     margin: 0;
   }
   .ul-ourteam {
-    gap: 24px;
+    row-gap: 64px;
     padding: 0;
     margin: 0;
   }
-  .section-three-li {
-    margin-bottom: 64px;
-  }
+
   /* sect 4 */
 
   .section-four {
@@ -1339,7 +1343,7 @@ button {
     padding-bottom: 96px;
   }
   .ul-portfolio {
-    gap: 24px;
+    row-gap: 72px;
     padding: 0;
     margin: 0;
   }
@@ -1359,11 +1363,10 @@ button {
     padding-bottom: 96px;
   }
   .list-gap {
-    text-align: center;
     display: block;
   }
   .footer-container {
-    padding: 0;
+    padding: 0 16px;
     margin: 0;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1430,8 +1433,6 @@ button {
     margin: 0;
   }
   .cont-section-two {
-    padding-top: 96px;
-    padding-bottom: 96px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -1453,7 +1454,6 @@ button {
   }
 
   .list-gap {
-    text-align: center;
     flex-direction: column;
     width: 100%;
     justify-content: center;
@@ -1482,7 +1482,7 @@ button {
   .container {
     display: flex;
     max-width: 1158px;
-    padding: 0;
+
     margin: 0 auto;
   }
   .content-section-one {
