@@ -958,9 +958,6 @@ button {
     padding-right: 16px;
   }
   .section-three {
-    max-width: 320px;
-    margin: 0 auto;
-
     padding: 96px 0;
   }
   .ul-ourteam {
@@ -987,9 +984,10 @@ button {
     margin-bottom: 72px;
   }
   .sect-three-con {
-    margin: 0;
+    margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
+    max-width: 320px;
   }
 
   .section-four {
@@ -1013,7 +1011,6 @@ button {
   }
 
   .footer {
-    max-width: 320px;
     margin: 0 auto;
     padding-top: 96px;
     padding-bottom: 96px;
@@ -1021,6 +1018,7 @@ button {
 }
 @media (max-width: 767px) {
   .footer-container {
+    max-width: 320px;
     flex-direction: column;
     gap: 72px;
     justify-content: center;
@@ -1318,19 +1316,22 @@ button {
 
   /* sect 3 */
   .section-three {
-    max-width: 768px;
     margin: 0 auto;
     padding-top: 96px;
 
     padding-bottom: 96px;
   }
   .sect-three-con {
+    margin: 0 auto;
     padding: 0;
     margin: 0;
   }
   .ul-ourteam {
     row-gap: 64px;
     padding: 0;
+    padding-left: 108px;
+    padding-right: 108px;
+
     margin: 0;
   }
 
@@ -1356,7 +1357,6 @@ button {
 
   /* footer */
   .footer-content {
-    max-width: 768px;
     margin: 0 auto;
     padding-top: 96px;
 
@@ -1481,7 +1481,6 @@ button {
 @media (min-width: 1158px) {
   .container {
     display: flex;
-    max-width: 1158px;
 
     margin: 0 auto;
   }
@@ -1524,7 +1523,6 @@ button {
     flex-direction: column;
   }
   .footer-content {
-    max-width: 1440px;
     margin: 0 auto;
     padding: 100px 0 100px 0;
   }
